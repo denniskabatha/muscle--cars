@@ -14,10 +14,10 @@
                 <img src="logo.jpeg" alt="" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Companies</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#companies">Companies</a></li>
+                    <li><a href="#images">Images</a></li>
+                    
                 </ul>
             </nav>
             <div class="header-text">
@@ -55,11 +55,51 @@
                         <h1 class="sub-1">The companies</h1>
                         <p>Muscle cars production is done by many different companies</p>
                         <div class="tab-titles">
-                            <p class="tab-links">Ford</p>
-                            <p class="tab-links">Chevrolet</p>
-                            <p class="tab-links">Pontaic</p>
-                            <p class="tab-links">Dodge</p>
+                            <p class="tab-links active-link" onclick="opentab('ford')">Ford</p>
+                            <p class="tab-links active-link" onclick="opentab('chevrolet')">Chevrolet</p>
+                            <p class="tab-links active-link"onclick="opentab('pontaic')">Pontaic</p>
+                            <p class="tab-links active-link" onclick="opentab('dodge')">Dodge</p>
                         </div>
+                        <div class="tab-contents active-tab" id="ford">
+                            <ul>
+                                <li><span>Ford </span>Mustang Boss 429</li>
+                                <li><span>Ford </span> Fairlanwe</li>
+                                <li><span>Ford </span>Torino Cobra</li>
+                                <li><span>Shelby</span>Mustang GT3500</li>
+                                <li><span>Ford </span> Falcon XB GT</li>
+                                <li><span>Ford </span>Glacies</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents active-tab" id="chevrolet">
+                            <ul>
+                                <li><span>Chevrolet </span>Chevelle LS9</li>
+                                <li><span>Chevrolet</span> COPO Nova</li>
+                                <li><span>Chevrolet</span>Chevelle</li>
+                                <li><span>Chevrolet</span>Camaro Zl1</li>
+                                <li><span>Chevrolet </span> COPO Camaro</li>
+                                <li><span>Chevrolet</span>Monte Carlo SS</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents active-tab" id="pontaic">
+                            <ul>
+                                <li><span>Pontaic </span>GTO Judge</li>
+                                <li><span>Pontaic</span> Trans Am</li>
+                                <li><span>Pontaic</span>GTO</li>
+                                <li><span>Pontaic</span>Firebird</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents active-tab" id="dodge">
+                            <ul>
+                                <li><span>Dodge</span>Charger</li>
+                                <li><span>Dodge</span> Challenger</li>
+                                <li><span>Dodge</span>DURANGO</li>
+                                <li><span>Dodge</span>Camaro Zl1</li>
+                                <li><span>Dodge </span> Demon</li>
+                                <li><span>Dodge</span>Dytona</li>
+                            </ul>
+                        </div>
+                        
 
                     </div>
 
@@ -71,10 +111,51 @@
                 </div>
                 
             </div>
+            <div id="images"> 
+                <div class="container">
+                    <div class="row">
+                        <div class="image-col-1">
+                            <h1>Ford</h1>
+                            <img src="ford1.jpeg">
+                            <img src="ford2.jpeg">
+                            <img src="ford3.jpeg">
+
+
+                        </div>
+                        <div class="image-col-2">
+                            <h1>Pontaic</h1>
+                            <img src="pontaic1.jpeg">
+                            <img src="pontaic2.jpeg">
+                            <img src="pontaic3.jpeg">
+
+                        </div>
+                        </div>
+                        <div class="image-col-3">
+                            <h1>Chevrolet</h1>
+                            <img src="chev1.jpeg">
+                            <img src="chev2.jpeg">
+                            <img src="chev3.jpeg">
+
+                        </div>
+                        </div>
+                        <div class="image-col-4">
+                            <h1>Dodge</h1>
+                            <img src="dodge1.jpeg">
+                            <img src="dodge2.jpeg">
+                            <img src="dodge3.jpeg">
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
         </div>
     </div>
 
-    
+<script src="/muscle-cars/muscle--cars/script.js"></script>    
     
 </body>
 </html>
